@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  html,
+  body {
+    font-size: 10px;
+    font-family: "Playfair Display", sans-serif;
+  }
+:root{
+    --primary: #219D80;
+    --secondary: #EDF7F5;
+}
+/* Optional: Make header fixed at top */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+.about-us-section{
+    padding-top: 11.9rem;
+}
+
+.image-wrapper{
+    position: relative;
+}
+
+.image-2{
+    position: absolute;
+    top: 30rem;
+    left: 24rem;
+}
+.about-content-wrapper{
+    padding-left: 8rem;
+}
+.about-content{
+    display: flex;
+    align-items: center;
+}
+p{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+.line{
+    width: 5rem;
+    height: 0.2rem;
+    background: var(--primary);
+    margin-top: -1rem;
+    margin-left: 1rem;
+}
+.about-heading{
+    font-size: 3.9rem;
+    font-weight: 700;
+    margin-top: 1.6rem;
+}
+.about-para{
+    font-size: 1.6rem;
+    font-family: "Montserrat", sans-serif;
+    padding-top: 1.6rem;
+}
+.about-button{
+    background: var(--primary);
+    color: white;
+    border: 0.1rem solid var(--primary);
+    font-size: 1.6rem;
+    width: 11.6rem;
+    text-align: center;
+    padding: 1rem 0.8rem 1rem 0.8rem;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    cursor: pointer;
+    margin-top: 4rem;
+}
+.about-button:hover{
+    background: white;
+    color: var(--primary);
+    transition: all;
+    transition-duration: 500ms;
+}
+.welocme-section{
+    padding-top: 25rem;
+    padding-right: 6rem;
+}
+.welocme-section h2{
+    font-size: 3.9rem;
+    font-weight: 700;
+    padding-top: 1.6rem;
+}
+.welocme-section p{
+    font-size: 1.6rem;
+    font-family: "Montserrat";
+    padding-top: 1.6rem;
+}
+.line-1{
+    width: 5rem;
+    height: 0.2rem;
+    background: var(--primary);
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+.mission{
+    background: var(--secondary);
+    padding: 1.4rem;
+}
+.mission p{
+    font-family: "Montserrat";
+    font-size: 1.4rem;
+    padding-top: 1.6rem;
+}
+.mission-content{
+    display: flex;
+    justify-content: space-between;
+}
+.mission-content h3{
+    font-family: "Nunito";
+    font-size: 2rem;
+    font-weight: 700;
+}
+.donation h3, .medical-help h3{
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: "Montserrat";
+    padding-top: 1.6rem;
+}
+.donation {
+    padding-top: 1.6rem;
+}
+.medical-help{
+    padding-top: 2.4rem;
+}
+.image-wrapper-section{
+    padding-top: 25rem;
+    position: relative;
+}
+.list-items{
+    border: 1.5rem solid var(--secondary);
+    position: absolute;
+    top: 50rem;
+    left: 24rem;
+}
+.list-items ul{
+    background-color: white;
+    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+}
+.list-items ul li{
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-left: 1rem;
+}
+.list-items ul li:first-child{
+    color: var(--primary);
+}
+.image img{
+    width: 40rem;
+}
+.latest-causes-section{
+    padding-top: 12rem;
+}
+.latest-causes-section h2{
+    font-size: 3.9rem;
+    font-weight: 700;
+    padding-top: 1.6rem;
+}
+.swiper{
+    overflow: visible;
+}
+.latest-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.previous-next{
+    display: flex;
+    align-items: center; 
+    text-align: center; 
+    position: relative;
+    margin-right: 85px;
+    border-color: var(--secondary);
+}
+.swiper-button-prev,.swiper-button-next{
+    background-color: var(--secondary);
+    padding: 4rem;
+    border-radius: 4rem;
+    border-color: var(--secondary);
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 20px;  /* Icon size */
+    color: black;  /* Icon color */
+    border-color: var(--secondary);
+}
+.next{
+    margin-left: 0.5rem;
+}
+.cards{
+    padding-top: 5rem;
+    transition: transform 0.3s ease-out;
+}
+.cards:hover{
+    transform: scale(1.05);
+}
+.card-image img{
+    width: 100%;
+}
+.card-content{
+    box-shadow: 0.5rem 0.5rem 1rem gray;
+    padding: 2.4rem 1.9rem 2.4rem 1.9rem;
+    width: 100%;
+}
+.card-content span{
+    color: var(--primary);
+    font-weight: 600;
+    font-family: "Montserrat";
+}
+.card-content h3{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.card-content .paragraph{
+    font-size: 1.4rem;
+    font-family: "Montserrat";   
+}
+.card-donation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card-donation p , .percent, .target div, .goal-to, .card-button{
+    font-size: 1.4rem;
+    font-family: Montserrat;
+}
+.target{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1.6rem;
+}
+.card-button{
+    background-color: white;
+    padding: 0.8rem 1.6rem 0.8rem 1.6rem;
+    margin-top: 3.2rem;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+}
+.card-button:hover{
+    background-color: var(--primary);
+    color: white;
+    transition: all 300ms;
+}
+
+.carousel-item {
+    text-align: center;
+    padding: 2rem;
+    background-color: #000;
+    color: #fff;
+    margin-top: 15rem;
+    padding-top: 8rem;
+    height: auto;
+    width: 100%;
+  }
+  
+  .carousel-indicators li {
+    background-color: #888;
+  }
+  
+  .carousel-indicators .active {
+    background-color: #fff;
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: #000;
+   
+  }
+.carousel-item h2{
+    font-size: 3.9rem;
+    font-weight: 700;
+    padding-top: 1.6rem;
+}
+.carousel-item img{
+    width: 12rem;
+    height: 12rem;
+    margin-top: 5rem;
+}
+.right-line{
+    position: absolute;
+    width: 5rem;
+    height: 0.2rem;
+    background: var(--primary);
+    margin-top: 1.2rem;
+    margin-left: 47rem;
+}
+.left-line{
+    position: absolute;
+    width: 5rem;
+    height: 0.3rem;
+    background: var(--primary);
+    margin-top: -2.3rem;
+    margin-left: 77rem;
+}
+.section-text{
+    font-size: 1.8rem;
+    font-weight: 600;
+    font-family: "Montserrat";
+}
+.client{
+    text-align: center;
+    margin-top: 3.2rem;
+}
+.client .name{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.client .position{
+    font-size: 1.6rem;
+    font-weight: 600;
+    font-family: "Montserrat";
+}
+.client-review{
+    font-family: "Montserrat";
+    font-size: 2rem;
+    font-weight: 600;
+    padding-top: 3.2rem;
+}
+.fun-fact-area{
+    padding-top: 12rem;
+}
+.fun-fact-area h2{
+    font-size: 3.9rem;
+    font-weight: 700;
+    padding-top: 1.6rem;
+}
+.details{
+    display: flex;
+    padding-bottom: 1.6rem;
+}
+.details span{
+    margin-top: 0.4rem;
+    margin-left: 1rem;
+}  
+.logo-container{
+    padding-top: 12rem;
+}
+.logo-container img{
+    margin-left: 9rem;
+}
+.footer {
+    background-color: #454545;
+    margin-top: 12.4rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.logo-column p {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: white;
+    padding-top: 3.2rem;
+    font-family: "Montserrat";
+}
+
+.logo-column h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    padding-top: 0.8rem;
+    color: white;
+}
+
+.logo-column-1 h4 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    padding-top: 0.8rem;
+    color: white;
+}
+
+.logo-column-1 ul {
+    padding-left: 0;
+    padding-top: 3rem;
+}
+
+.logo-column-1 ul li,
+.logo-column-1 span {
+    font-size: 1.6rem;
+    font-family: "Montserrat";
+    color: #AFAFAF;
+    list-style-type: none;
+    padding-bottom: 2.5rem;
+}
+
+.search-container {
+    display: flex;
+    padding-top: 3rem;
+}
+
+.search-container input {
+    padding: 0.5rem 0.8rem 0.5rem 1.8rem;
+    width: 250px;
+    font-size: 1.4rem;
+    font-family: "Montserrat";
+}
+
+.search-container button {
+    padding: 0.8rem 2rem 0.8rem 1rem;
+    background-color: var(--primary);
+    border: none;
+    color: white;
+    font-size: 1.6rem;
+    font-family: "Montserrat";
+}
+
+.search-container {
+    font-size: 1.4rem;
+    font-family: "Montserrat";
+    color: #AFAFAF;
+    padding-bottom: 2.5rem;
+}
+.mySwiper{
+    overflow: visible;
+}
